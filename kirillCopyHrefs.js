@@ -31,7 +31,8 @@ let scrape = async () => {
     console.log(`получил ссылки!`);
 
     // Преобразуем массив в строку (каждая ссылка на новой строке)
-    const urlsText = postUrls.join('\n');
+    const urlsText = postUrls.join('\"\,\"');
+    // const urlsText = postUrls;
 
     // Создаем директорию, если ее нет
     await fs.ensureDir('txt');

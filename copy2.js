@@ -45,42 +45,16 @@ console.log('go');
 //     'https://gluvexlab.com/catalog/kolonki-dlya-vezhkh/?page=222',
 //     'https://gluvexlab.com/catalog/kolonki-dlya-vezhkh/?page=222'];
 
-const TARGET_URLS=['https://gluvexlab.com/catalog/ispytatelnye_kamery_ctc_ttc/',
-    'https://gluvexlab.com/catalog/klimaticheskie_kamery_hpp/',
-    'https://gluvexlab.com/catalog/klimaticheskie_kamery_teplo_vlaga_hcp/',
-    'https://gluvexlab.com/catalog/farmatsevticheskie_kamery_ich/',
-    'https://gluvexlab.com/catalog/mass-spektrometry-s-induktivno-svyazannoy-plazmoy/',
-    'https://gluvexlab.com/catalog/gidkostnye-mass-spektrometry/',
-    'https://gluvexlab.com/catalog/gazovye-mass-spektrometry/',
-    'https://gluvexlab.com/catalog/promyshlennye-meshalki-dlya-bolshich-obemov/',
-    'https://gluvexlab.com/catalog/meshalki-1/',
-    'https://gluvexlab.com/catalog/magnitnye-meshalki/',
-    'https://gluvexlab.com/catalog/odnomestnye-meshalki/',
-    'https://gluvexlab.com/catalog/mnogomestnye-meshalki/',
-    'https://gluvexlab.com/catalog/meshalki-s-nagrevom-i-mnogomestnye-nagrevateli/',
-    'https://gluvexlab.com/catalog/meshalki-dlya-kultivirovaniya-i-mikroplanshet/',
-    'https://gluvexlab.com/catalog/promyshlennye-meshalki-dlya-bolshich-obemov/',
-    'https://gluvexlab.com/catalog/protochnye_okhladiteli/',
-    'https://gluvexlab.com/catalog/pogruzhnye_okhladiteli/',
-    'https://gluvexlab.com/catalog/kompaktnye_tsirkulyatsionnye_laboratornye_okhladiteli/',
-    'https://gluvexlab.com/catalog/kombinirovannye-nagrev-ochlagdenie/',
-    'https://gluvexlab.com/catalog/tsirkulyatsionnye_okhladiteli_dlya_rotatsionnykh_ispariteley/',
-    'https://gluvexlab.com/catalog/tsirkulyatsionnye_okhladiteli_v_nastolnom_korpuse/',
-    'https://gluvexlab.com/catalog/tsirkulyatsionnye_okhladiteli_v_vertikalnom_korpuse/',
-    'https://gluvexlab.com/catalog/spektrofotometry/',
-    'https://gluvexlab.com/catalog/spektrometry/',
-    'https://gluvexlab.com/catalog/napolnye-centrifugi/',
-    'https://gluvexlab.com/catalog/centrifugi-uvelichennogo-obema/',
-    'https://gluvexlab.com/catalog/vysokoskorostnye-centrifugi/',
-    'https://gluvexlab.com/catalog/universalnye-centrifugi/',
-    'https://gluvexlab.com/catalog/nastolnye-centrifugi/',
-    'https://gluvexlab.com/catalog/centrifugi/',
-    'https://gluvexlab.com/catalog/viskozimetricheskie_termostaty/',
-    'https://gluvexlab.com/catalog/navesnye_termostaty/',
-    'https://gluvexlab.com/catalog/okhlazhdayushchie_termostaty/',
-    'https://gluvexlab.com/catalog/pogruzhnye_termostaty/',
-    'https://gluvexlab.com/catalog/termostaty_s_otkrytoy_vannoy/',
-    'https://gluvexlab.com/catalog/termostaty_tsirkulyatory_s_otkrytoy_vannoy/'];
+// const TARGET_URLS=['https://www.desta-lab.ru/category/category_196/',
+// 'https://www.desta-lab.ru/category/category_854/',
+//     'https://www.desta-lab.ru/category/category_855/',
+//         'https://www.desta-lab.ru/category/category_859/'];
+
+// const TARGET_URLS=["https://www.desta-lab.ru/category/category_196/","https://www.desta-lab.ru/category/category_854/","https://www.desta-lab.ru/category/category_855/","https://www.desta-lab.ru/category/category_859/","https://www.desta-lab.ru/category/category_202/","https://www.desta-lab.ru/category/category_203/","https://www.desta-lab.ru/category/category_935/","https://www.desta-lab.ru/category/category_944/","https://www.desta-lab.ru/category/category_952/","https://www.desta-lab.ru/category/category_971/","https://www.desta-lab.ru/category/category_975/","https://www.desta-lab.ru/category/category_991/","https://www.desta-lab.ru/category/category_992/","https://www.desta-lab.ru/category/category_994/","https://www.desta-lab.ru/category/category_211/","https://www.desta-lab.ru/category/category_1022/","https://www.desta-lab.ru/category/category_305/","https://www.desta-lab.ru/category/category_1035/","https://www.desta-lab.ru/category/category_1051/","https://www.desta-lab.ru/category/category_1092/","https://www.desta-lab.ru/category/category_1055/","https://www.desta-lab.ru/category/category_1059/","https://www.desta-lab.ru/category/category_1062/","https://www.desta-lab.ru/category/category_1064/","https://www.desta-lab.ru/category/category_1066/","https://www.desta-lab.ru/category/category_1070/","https://www.desta-lab.ru/category/category_1071/","https://www.desta-lab.ru/category/category_1074/","https://www.desta-lab.ru/category/category_1081/","https://www.desta-lab.ru/category/category_307/","https://www.desta-lab.ru/category/category_1107/","https://www.desta-lab.ru/category/category_1109/","https://www.desta-lab.ru/category/category_1122/","https://www.desta-lab.ru/category/category_1123/","https://www.desta-lab.ru/category/category_1125/","https://www.desta-lab.ru/category/category_1131/","https://www.desta-lab.ru/category/category_1134/","https://www.desta-lab.ru/category/category_1135/","https://www.desta-lab.ru/category/category_1144/","https://www.desta-lab.ru/category/category_1146/","https://www.desta-lab.ru/category/category_1150/","https://www.desta-lab.ru/category/category_1153/","https://www.desta-lab.ru/category/category_1157/","https://www.desta-lab.ru/category/category_1160/","https://www.desta-lab.ru/category/category_1165/","https://www.desta-lab.ru/category/kontrol-kachestva/","https://www.desta-lab.ru/category/category_1185/","https://www.desta-lab.ru/category/category_1188/","https://www.desta-lab.ru/category/category_1195/","https://www.desta-lab.ru/category/category_1197/","https://www.desta-lab.ru/category/category_1199/","https://www.desta-lab.ru/category/category_1242/","https://www.desta-lab.ru/category/category_1207/","https://www.desta-lab.ru/category/category_1237/","https://www.desta-lab.ru/category/category_1241/","https://www.desta-lab.ru/category/category_1261/","https://www.desta-lab.ru/category/category_1305/","https://www.desta-lab.ru/category/category_1307/","https://www.desta-lab.ru/category/category_1311/","https://www.desta-lab.ru/category/category_1317/","https://www.desta-lab.ru/category/category_1319/","https://www.desta-lab.ru/category/category_1336/","https://www.desta-lab.ru/category/oborudovanie-dlya-raznykh-napravleniy/","https://www.desta-lab.ru/category/category_1385/","https://www.desta-lab.ru/category/category_1403/","https://www.desta-lab.ru/category/category_1405/","https://www.desta-lab.ru/category/category_1408/","https://www.desta-lab.ru/category/category_1413/","https://www.desta-lab.ru/category/category_1415/","https://www.desta-lab.ru/category/pribor-vakuumnogo-filtrovaniya/","https://www.desta-lab.ru/category/category_1437/","https://www.desta-lab.ru/category/category_1441/","https://www.desta-lab.ru/category/razlichnye-pribory/","https://www.desta-lab.ru/category/razlichnye-sistemy/","https://www.desta-lab.ru/category/category_1451/","https://www.desta-lab.ru/category/category_1454/","https://www.desta-lab.ru/category/category_1462/","https://www.desta-lab.ru/category/category_1469/","https://www.desta-lab.ru/category/category_1497/","https://www.desta-lab.ru/category/category_1498/","https://www.desta-lab.ru/category/category_1502/","https://www.desta-lab.ru/category/category_1523/","https://www.desta-lab.ru/category/category_1533/","https://www.desta-lab.ru/category/category_1046/","https://www.desta-lab.ru/category/category_1571/","https://www.desta-lab.ru/category/category_1580/","https://www.desta-lab.ru/category/category_1601/","https://www.desta-lab.ru/category/category_1608/","https://www.desta-lab.ru/category/category_1609/","https://www.desta-lab.ru/category/category_1612/","https://www.desta-lab.ru/category/category_1619/","https://www.desta-lab.ru/category/category_1626/","https://www.desta-lab.ru/category/category_326/","https://www.desta-lab.ru/category/category_1641/","https://www.desta-lab.ru/category/category_1644/","https://www.desta-lab.ru/category/category_1656/","https://www.desta-lab.ru/category/category_1681/"];
+
+const TARGET_URLS=['https://www.desta-lab.ru/category/category_855/'];
+
+
 // const TARGET_URLS=['https://gluvexlab.com/catalog/kolonki-dlya-gkh/','https://gluvexlab.com/catalog/kolonki-dlya-vezhkh/'];
 // const TARGET_URLS=['https://gluvexlab.com/catalog/ionnye-chromatografy/','https://gluvexlab.com/catalog/instrumentalnaya-tonkosloynaya-chromatografiya/','https://gluvexlab.com/catalog/okhlazhdayushchie_kamery_ips/','https://gluvexlab.com/catalog/okhdazhdayushchie_inkubatory_na_osnove_effekta_pelte_ipp/','https://gluvexlab.com/catalog/kompressornye_okhlazhdayushchie_inkubatory_icp/','https://gluvexlab.com/catalog/inkubatory_serii_i/','https://gluvexlab.com/catalog/co2_inkubator_ico/','https://gluvexlab.com/catalog/ik-fure-spektrometry/','https://gluvexlab.com/catalog/moduli-nasosov-dlya-vegch/','https://gluvexlab.com/catalog/moduli-detektorov-dlya-vegch/','https://gluvexlab.com/catalog/moduli-termostatov-dlya-vegch/','https://gluvexlab.com/catalog/moduli-avtosamplerov-dlya-vegch/','https://gluvexlab.com/catalog/zhidkostnye_khromatografy/'];
 // let TARGET_URLS=['https://gluvexlab.com/catalog/ionnye-chromatografy/','https://gluvexlab.com/catalog/instrumentalnaya-tonkosloynaya-chromatografiya/','https://gluvexlab.com/catalog/okhlazhdayushchie_kamery_ips/','https://gluvexlab.com/catalog/okhdazhdayushchie_inkubatory_na_osnove_effekta_pelte_ipp/','https://gluvexlab.com/catalog/kompressornye_okhlazhdayushchie_inkubatory_icp/','https://gluvexlab.com/catalog/inkubatory_serii_i/','https://gluvexlab.com/catalog/co2_inkubator_ico/','https://gluvexlab.com/catalog/ik-fure-spektrometry/','https://gluvexlab.com/catalog/moduli-nasosov-dlya-vegch/','https://gluvexlab.com/catalog/moduli-detektorov-dlya-vegch/','https://gluvexlab.com/catalog/moduli-termostatov-dlya-vegch/','https://gluvexlab.com/catalog/moduli-avtosamplerov-dlya-vegch/','https://gluvexlab.com/catalog/zhidkostnye_khromatografy/']
@@ -148,30 +122,38 @@ async function parseProductPage(page) {
     const $ = cheerio.load(content);
 
     const extractText = (selector) => $(selector).text().trim();
-    const extractAttribute = (label) => {
-        const element = $(`.uk-section .uk-margin-xsmall:contains('${label}')`);
-        return element.length ? element.text().replace(label, '').trim() : '';
-    };
+    // const extractAttribute = (label) => {
+    //     const element = $(`.uk-section .uk-margin-xsmall:contains('${label}')`);
+    //     return element.length ? element.text().replace(label, '').trim() : '';
+    // };
 
-    const title = extractText(".fw-title h1");
-    const price = extractText(".product-page__price-block");
-    const description = extractText(".fw-tab-content.active");
-    const category = $(".uk-breadcrumb li").last().text().trim();
+    const title = extractText(".item-pg__title span");
+    const price = extractText(".pd-price__reg-price")
+
+    const description = extractText(".item-tabs__content-i.active");
+    // const description = $(".item-tabs__content-i.active");
+
+    const category = $(".breadcrumbs__list li").last().text().trim();
     const contentshort = $(".product__shortdesc").text();
 
-    const atributesall = $(`.uk-section .uk-margin-xsmall`).text().trim();
+    const atributesall = $(`.s-product-sku`).text().trim();
 
-    const article = extractAttribute('Артикул:');
-    const brand = extractAttribute('Бренд:');
-    const country = extractAttribute('Страна производства:');
+    // const brand = $(`.s-product-sku span`).text().trim();
+    // const article = $(`.pd-brand-info__text a`).text().trim();
+    const brand = $(`.s-product-sku:last-child span`).text().trim();
+    const article = $(`.pd-brand-info__text:last-child a`).text().trim();
+
+    // const article = extractAttribute('Артикул:');
+    // const brand = extractAttribute('Бренд:');
+    const country = '';
 
     // Image handling
     let imageName = 'no_image.png';
-    const imgSrc = $(".uk-section .product-page__img img").attr('src');
+    const imgSrc = $(".pd-image__big-photo-inner img").attr('src');
     if (imgSrc) {
         const ext = '.png';
         imageName = `${title.replace(/[^\w]/g, '')}_${Date.now()}${ext}`;
-        await downloadImage(`https://gluvexlab.com${imgSrc}`, imageName);
+        await downloadImage(`https://www.desta-lab.ru${imgSrc}`, imageName);
     }
 
     return {
@@ -187,23 +169,7 @@ async function parseProductPage(page) {
         category
     };
 }
-// async function saveToExcel(data, workerId, fileName = `products_${workerId}_${Date.now()}`) {
-//     try {
-//         const filePath = path.join(CONFIG.XLSX_DIR, `${fileName}.xlsx`);
-//         const buffer = xlsx.build([{
-//             name: 'Products',
-//             data: [
-//                 ['Title', 'Article', 'Brand', 'Country', 'Image','Description','Contentshort', 'Price', 'Category'],
-//                 ...data.map(p => [p.title, p.article, p.brand, p.country, p.image, p.description, p.contentshort, p.price, p.category])
-//             ]
-//         }]);
-//         await fs.writeFile(filePath, buffer);
-//         return filePath;
-//     } catch (err) {
-//         console.error('Error saving Excel:', err);
-//         return null;
-//     }
-// }
+
 
 async function saveToExcel(data, workerId, fileName = `products_${workerId}}`) {
     try {
@@ -391,7 +357,7 @@ async function scrapePage(page, url) {
 
             // Ожидание загрузки продуктов
             try {
-                await page.waitForSelector('.product-items', {
+                await page.waitForSelector('.ui-items', {
                     timeout: 20000,
                     visible: true
                 });
@@ -402,9 +368,10 @@ async function scrapePage(page, url) {
 
             // Получение ссылок на продукты
             const productLinks = await page.$$eval(
-                '.product-items .fw-product-card__img a',
+                '.ui-items .item-c__image-wrapper a',
                 links => links.map(link => link.href)
             );
+            // console.log(productLinks);
 
             await log(workerId, `Found ${productLinks.length} products on page ${pageNum}`);
 
@@ -425,7 +392,7 @@ async function scrapePage(page, url) {
                     let retries = 3;
                     while (retries > 0) {
                         try {
-                            await page.waitForSelector('.fw-title h1', {
+                            await page.waitForSelector('.item-pg__title', {
                                 timeout: 15000,
                                 visible: true
                             });
@@ -453,7 +420,7 @@ async function scrapePage(page, url) {
                 }
             }
 
-            // Сохранение данных текущей страницы в TXT
+            // Сохранение данных текущей страницы в exel
             if (pageProducts.length > 0) {
                 // const excelFileName = `worker_${workerId}_page_${pageNum}`;
                 const excelFileName = `worker_${workerId}`;
@@ -465,18 +432,41 @@ async function scrapePage(page, url) {
                     await log(workerId, `Failed to save Excel for page ${pageNum}: ${err.message}`);
                 }
             }
-
+            let lastButton='';
+            // Обработка пагинации
             // Обработка пагинации
             try {
                 await page.goto(currentUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-                const nextButton = await page.$('li.page.next:not(.d-none) > a');
 
-                if (!nextButton) {
-                    await log(workerId, `No more pages found. Finished at page ${pageNum}`);
+                // Получаем все элементы пагинации
+                const paginationItems = await page.$$('.catalog-pg__pagination > div > ul > li');
+
+                if (!paginationItems || paginationItems.length === 0) {
+                    await log(workerId, `No pagination found. Finished at page ${pageNum}`);
                     break;
                 }
 
-                const nextPageUrl = await page.evaluate(btn => btn.href, nextButton);
+                // Получаем номер последней страницы
+                const lastPageNumber = await paginationItems[paginationItems.length - 2].evaluate(el => {
+                    return parseInt(el.textContent.trim());
+                });
+
+                // Проверяем, достигли ли мы последней страницы
+                if (pageNum >= lastPageNumber) {
+                    await log(workerId, `Reached last page (${lastPageNumber}). Finished at page ${pageNum}`);
+                    break;
+                }
+
+                // Находим кнопку следующей страницы
+                const nextButton = await page.$('.catalog-pg__pagination > div > ul > li:last-child > a');
+
+                if (!nextButton) {
+                    await log(workerId, `No next button found. Finished at page ${pageNum}`);
+                    break;
+                }
+
+                // Получаем URL следующей страницы
+                const nextPageUrl = await nextButton.evaluate(btn => btn.href);
 
                 try {
                     await Promise.all([
@@ -493,7 +483,7 @@ async function scrapePage(page, url) {
                     });
                 }
 
-                await page.waitForSelector('.product-items', { timeout: 20000 });
+                await page.waitForSelector('.ui-items', { timeout: 20000 });
                 currentUrl = page.url();
                 pageNum++;
 
